@@ -19,11 +19,13 @@ build/
 # misc
 .DS_Store
 *.pem
-.agents/**/mcp_config.json
-.agents/mcp_config.json
-**/mcp_config.json
-mcp_config.json
-*.tsbuildinfo
-next-env.d.ts
+# IDE and agent configs
+.agents/
+**/.agents/
+.vscode/
+**/.vscode/
+.antigravity/
+**/.antigravity/
 .antigravity-backup/
+**/.antigravity-backup/
 JULES_REPORT.md

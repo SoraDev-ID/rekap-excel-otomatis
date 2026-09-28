@@ -28,10 +28,15 @@ yarn-error.log*
 .env*.local
 .env.local
 .env
-.agents/**/mcp_config.json
-.agents/mcp_config.json
-**/mcp_config.json
-mcp_config.json
+# IDE and agent configs
+.agents/
+**/.agents/
+.vscode/
+**/.vscode/
+.antigravity/
+**/.antigravity/
+.antigravity-backup/
+**/.antigravity-backup/
 
 # vercel
 .vercel
