@@ -42,6 +42,6 @@ yarn-error.log*
 .vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
 fill_repo_meta.py
+AGENTS.md
+**/AGENTS.md
