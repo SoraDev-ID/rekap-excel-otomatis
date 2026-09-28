@@ -23,3 +23,5 @@ build/
 .agents/mcp_config.json
 *.tsbuildinfo
 next-env.d.ts
+.antigravity-backup/
+JULES_REPORT.md
