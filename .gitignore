@@ -21,6 +21,8 @@ build/
 *.pem
 .agents/**/mcp_config.json
 .agents/mcp_config.json
+**/mcp_config.json
+mcp_config.json
 *.tsbuildinfo
 next-env.d.ts
 .antigravity-backup/

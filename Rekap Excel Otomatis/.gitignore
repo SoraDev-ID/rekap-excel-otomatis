@@ -30,6 +30,8 @@ yarn-error.log*
 .env
 .agents/**/mcp_config.json
 .agents/mcp_config.json
+**/mcp_config.json
+mcp_config.json
 
 # vercel
 .vercel
