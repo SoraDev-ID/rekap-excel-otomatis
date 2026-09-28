@@ -99,12 +99,12 @@ Telah disediakan 1 perusahaan contoh (**PT Nusantara Demo Corp**) dengan 3 akun 
 ### 2. Kloning & Instalasi
 ```bash
 git clone <url-repository>
-cd Project
+cd "Project/Rekap Excel Otomatis"
 npm install
 ```
 
 ### 3. Konfigurasi Lingkungan (`.env.local`)
-Buat file `.env.local` di direktori utama:
+Buat file `.env.local` di dalam folder `Rekap Excel Otomatis/`:
 ```env
 NEXT_PUBLIC_SUPABASE_URL="https://your-project-id.supabase.co"
 NEXT_PUBLIC_SUPABASE_ANON_KEY="<your-anon-key>"
@@ -135,14 +135,15 @@ Proyek ini telah dikonfigurasi secara lengkap untuk otomatisasi build dan deploy
 ### Metode 1: Menggunakan Dockerfile Standalone (Disarankan)
 Repository telah memuat `Dockerfile` dan `railway.toml`. Ketika repository dihubungkan ke Railway:
 1. Hubungkan repository GitHub ke layanan Railway.
-2. Railway akan mendeteksi `Dockerfile` secara otomatis dan melakukan build multi-stage yang hemat sumber daya.
-3. Atur variabel lingkungan berikut di menu **Variables** Railway:
+2. Di Railway **Settings**, atur **Root Directory** ke: `Rekap Excel Otomatis`.
+3. Railway akan mendeteksi `Dockerfile` secara otomatis dan melakukan build multi-stage yang hemat sumber daya.
+4. Atur variabel lingkungan berikut di menu **Variables** Railway:
    - `NEXT_PUBLIC_SUPABASE_URL`: URL proyek Supabase Anda.
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Kunci anon Supabase.
    - `SUPABASE_URL`: URL proyek Supabase Anda.
    - `SUPABASE_ANON_KEY`: Kunci anon Supabase.
    - `SUPABASE_SERVICE_ROLE_KEY`: Kunci service_role Supabase (rahasia, server-side only).
-4. Deploy akan berjalan otomatis dan menghasilkan domain publik HTTPS yang siap digunakan.
+5. Deploy akan berjalan otomatis dan menghasilkan domain publik HTTPS yang siap digunakan.
 
 ---
 
