@@ -29,3 +29,4 @@ build/
 .antigravity-backup/
 **/.antigravity-backup/
 JULES_REPORT.md
+fill_repo_meta.py
